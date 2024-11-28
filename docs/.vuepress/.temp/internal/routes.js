@@ -15,20 +15,3 @@ export const routes = Object.fromEntries([
   ["/technique%20share/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A03.html", { loader: () => import(/* webpackChunkName: "technique share_技术文章3.html" */"D:/DocsBuilder/VuePress/vuepress-starter/docs/.vuepress/.temp/pages/technique share/技术文章3.html.js"), meta: {"title":"技术文章3"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"D:/DocsBuilder/VuePress/vuepress-starter/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
 ]);
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateRoutes) {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-  }
-  if (__VUE_HMR_RUNTIME__.updateRedirects) {
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ routes, redirects }) => {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  })
-}
