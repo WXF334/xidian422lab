@@ -6,7 +6,7 @@ export default defineUserConfig({
 	lang: 'zh-CN',
   title: '422 Lab',
   description: '陕西省密码应用与创新实验室 ',
-  base: "/vuepress/",
+ 
 
   theme: defaultTheme({
     //logo: 'https://vuejs.press/images/hero.png',
