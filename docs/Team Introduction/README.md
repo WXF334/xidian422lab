@@ -1,4 +1,4 @@
-# XDU 422 Lab
+# XDU Crypto Lab
 
 陕西省密码应用与创新实验室
 

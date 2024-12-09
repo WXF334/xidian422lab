@@ -4,13 +4,13 @@ import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
 	lang: 'zh-CN',
-  title: '422 Lab',
+  title: 'Crypto Lab',
   description: '陕西省密码应用与创新实验室 ',
  
 
   theme: defaultTheme({
     //logo: 'https://vuejs.press/images/hero.png',
-	logo:'https://th.bing.com/th/id/OIP.G-P3-RcX6XZeFj9DcZ7dxgAAAA?w=159&h=180&c=7&r=0&o=5&pid=1.7',
+	//logo:'../public/1.jpg',
     navbar: ['/', '/openHiTLS/', '/technique share/'],
 	// 不同子路径下的页面会使用不同的侧边栏
     sidebar: {
@@ -21,7 +21,7 @@ export default defineUserConfig({
           children: [
             '注册.md', // 解析为 `/openHiTLS/注册.md`
 			'下载.md', 
-			'运行.md',
+			'测试.md',
 			'提交.md',
           ],
         },

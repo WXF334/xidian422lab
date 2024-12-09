@@ -20,7 +20,7 @@ features:
     details: 探讨开源生态、开源风险等开源领域热点问题研究，洞察开源生态最新发展。
  
 
-footer: Copyright © 2024-present Xdu 422 Lab
+footer: Copyright © 2024-present Xdu Crypto Lab
 ---
 
 [default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page
