@@ -189,8 +189,8 @@
 首先在openEuler系统中查看ip</p>
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line"><span class="token function">ifconfig</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><img src="@source/.vuepress/public/ifconfig.png" alt="">
-可以看到ip地址为192.168.119.131</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><img src="@source/.vuepress/public/ifconfig.png" alt=""></p>
+<p>可以看到ip地址为192.168.119.131</p>
 <p>在windows中打开PowerShell，输入以下命令，然后输入密码</p>
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line"><span class="token function">ssh</span> lab-422@192.168.119.131</span>
 <span class="line"></span></code></pre>

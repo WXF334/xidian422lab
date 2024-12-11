@@ -202,8 +202,8 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><img src="@source/.vuepress/public/build_sdv.png" alt=""></p>
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line"><span class="token function">bash</span> execute_sdv.sh</span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><img src="@source/.vuepress/public/execute_sdv.png" alt="">
-测试通过</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><img src="@source/.vuepress/public/execute_sdv.png" alt=""></p>
+<p>测试通过</p>
 </div></template>
 
 
