@@ -1,7 +1,7 @@
 ---
 home: true
 title: 首页
-heroImage: 1.jpg
+heroImage: logo.png
 actions:
   - text: 进入了解
     link: /openHiTLS/
