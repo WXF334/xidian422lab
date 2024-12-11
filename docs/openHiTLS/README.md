@@ -1,23 +1,6 @@
 # openHiTLS教程
 openHiTLS是一款构建密码学安全能力的C/C++库，提供符合公开标准的密码学算法、TLS协议栈。
-## 安装openHiTLS
-#### 下载相关代码
-- [openHiTLS下载地址](https://gitcode.com/openhitls)
-- [libboundscheck下载地址](https://gitee.com/openeuler/libboundscheck.git)
 
-需要将libboundscheck下载至openHiTLS/platform/Secure_C目录
-#### 构建安装，在openHiTLS根路径下执行以下命令：
-```sh
-mkdir build
-cd build
-cmake ..
-make && make install
-```
-## 在您的C/C++项目中集成openHiTLS
-- 按照openHiTLS的API手册，在您的项目代码中调用openHiTLS提供的接口
-- 将openHiTLS的头文件和库路径加入到您的项目依赖中，以gcc编译器为例，如下：
-```sh
-# 使用-I指定openHiTLS头文件所在路径，使用-L指定openHiTLS动态库所在路径
-gcc application.c -lhitls_crypto -lhitls_tls -lhitls_bsl -lboundscheck -I 
-<openHiTLS头文件安装路径> -L <openHiTLS动态库安装路径>
-```
+<div align=center><img src="../.vuepress/public/openHiTLS.png"></div>
+
+openHiTLS旨在打造算法先进、性能卓越、高效敏捷、安全可靠的密码套件，通过轻量级、可剪裁的软件技术架构满足各行业不同场景的多样化要求，让密码技术应用更简单，同时探索后量子等先进算法创新实践，构建密码前沿技术底座！

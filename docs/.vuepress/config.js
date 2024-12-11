@@ -19,9 +19,10 @@ export default defineUserConfig({
           text: 'openHiTLS教程',
           // 相对路径会自动追加子路径前缀
           children: [
-            '注册.md', // 解析为 `/openHiTLS/注册.md`
+            // 解析为 `/openHiTLS/注册.md`
 			'下载.md', 
 			'测试.md',
+			'运行.md',
 			'提交.md',
           ],
         },

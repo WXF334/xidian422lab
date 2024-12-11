@@ -1,5 +1,5 @@
-<template><div><h1 id="测试" tabindex="-1"><a class="header-anchor" href="#测试"><span>测试</span></a></h1>
-<p>测试工程依赖编译源码，参考《构建及安装指导》准备构建源码编译依赖的环境等，确保源码能够得到正确编译。</p>
+<template><div><h1 id="测试指南" tabindex="-1"><a class="header-anchor" href="#测试指南"><span>测试指南</span></a></h1>
+<p>在构建完OpenHiTLS后，执行测试代码。测试工程依赖编译源码，参考《下载并构建OpenHiTLS》准备构建源码编译依赖的环境等，确保源码能够得到正确编译。</p>
 <h2 id="测试代码目录结构" tabindex="-1"><a class="header-anchor" href="#测试代码目录结构"><span>测试代码目录结构</span></a></h2>
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line">./testcode/</span>
 <span class="line">├── CMakeLists.txt</span>

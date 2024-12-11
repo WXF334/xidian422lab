@@ -106,7 +106,7 @@ configure.py脚本会直接基于顶层的compile.json和feature.json配置文�
 <span class="line"><span class="token builtin class-name">cd</span> ./build</span>
 <span class="line">python3 <span class="token punctuation">..</span>/configure.py <span class="token parameter variable">--system</span> linux <span class="token parameter variable">--bits</span> <span class="token number">64</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>  python执行结果如下：</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>python执行结果如下：</p>
 <p><img src="@source/.vuepress/public/python编译.png" alt=""></p>
 <ul>
 <li>openHiTLS依赖于libboundscheck库，在之前的准备源码阶段已经一并下载。现在进入Secure_C文件夹中编译，生成动态库libboundscheck.so并放到库文件目录下</li>
@@ -115,7 +115,7 @@ configure.py脚本会直接基于顶层的compile.json和feature.json配置文�
 <span class="line"><span class="token function">make</span> <span class="token assign-left variable">CC</span><span class="token operator">=</span>gcc</span>
 <span class="line"><span class="token function">sudo</span> <span class="token function">cp</span> ./lib/libboundscheck.so /usr/local/lib/</span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>  make编译结果如下：</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>make编译结果如下：</p>
 <p><img src="@source/.vuepress/public/makeCC=gcc.png" alt=""></p>
 <ul>
 <li>回到build目录下进行make编译</li>
@@ -123,7 +123,7 @@ configure.py脚本会直接基于顶层的compile.json和feature.json配置文�
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line"><span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/<span class="token punctuation">..</span>/build</span>
 <span class="line"><span class="token function">make</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>  make编译结果如下：</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>make编译结果如下：</p>
 <p><img src="@source/.vuepress/public/make成功.png" alt=""></p>
 <p>构建结果会输出在openHiTLS/build目录下。</p>
 <h4 id="_3-2-构建结果安装" tabindex="-1"><a class="header-anchor" href="#_3-2-构建结果安装"><span>3.2 构建结果安装</span></a></h4>
@@ -132,7 +132,7 @@ configure.py脚本会直接基于顶层的compile.json和feature.json配置文�
 </ul>
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line"><span class="token function">sudo</span> <span class="token function">make</span> <span class="token function">install</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>  至此，构建完成：</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>至此，构建完成：</p>
 <p><img src="@source/.vuepress/public/makeinstall.png" alt=""></p>
 </div></template>
 

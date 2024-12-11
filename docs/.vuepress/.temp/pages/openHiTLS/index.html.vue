@@ -1,27 +1,7 @@
 <template><div><h1 id="openhitls教程" tabindex="-1"><a class="header-anchor" href="#openhitls教程"><span>openHiTLS教程</span></a></h1>
 <p>openHiTLS是一款构建密码学安全能力的C/C++库，提供符合公开标准的密码学算法、TLS协议栈。</p>
-<h2 id="安装openhitls" tabindex="-1"><a class="header-anchor" href="#安装openhitls"><span>安装openHiTLS</span></a></h2>
-<h4 id="下载相关代码" tabindex="-1"><a class="header-anchor" href="#下载相关代码"><span>下载相关代码</span></a></h4>
-<ul>
-<li><a href="https://gitcode.com/openhitls" target="_blank" rel="noopener noreferrer">openHiTLS下载地址</a></li>
-<li><a href="https://gitee.com/openeuler/libboundscheck.git" target="_blank" rel="noopener noreferrer">libboundscheck下载地址</a></li>
-</ul>
-<p>需要将libboundscheck下载至openHiTLS/platform/Secure_C目录</p>
-<h4 id="构建安装-在openhitls根路径下执行以下命令" tabindex="-1"><a class="header-anchor" href="#构建安装-在openhitls根路径下执行以下命令"><span>构建安装，在openHiTLS根路径下执行以下命令：</span></a></h4>
-<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line"><span class="token function">mkdir</span> build</span>
-<span class="line"><span class="token builtin class-name">cd</span> build</span>
-<span class="line">cmake <span class="token punctuation">..</span></span>
-<span class="line"><span class="token function">make</span> <span class="token operator">&amp;&amp;</span> <span class="token function">make</span> <span class="token function">install</span></span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="在您的c-c-项目中集成openhitls" tabindex="-1"><a class="header-anchor" href="#在您的c-c-项目中集成openhitls"><span>在您的C/C++项目中集成openHiTLS</span></a></h2>
-<ul>
-<li>按照openHiTLS的API手册，在您的项目代码中调用openHiTLS提供的接口</li>
-<li>将openHiTLS的头文件和库路径加入到您的项目依赖中，以gcc编译器为例，如下：</li>
-</ul>
-<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line"><span class="token comment"># 使用-I指定openHiTLS头文件所在路径，使用-L指定openHiTLS动态库所在路径</span></span>
-<span class="line">gcc application.c <span class="token parameter variable">-lhitls_crypto</span> <span class="token parameter variable">-lhitls_tls</span> <span class="token parameter variable">-lhitls_bsl</span> <span class="token parameter variable">-lboundscheck</span> <span class="token parameter variable">-I</span> </span>
-<span class="line"><span class="token operator">&lt;</span>openHiTLS头文件安装路径<span class="token operator">></span> <span class="token parameter variable">-L</span> <span class="token operator">&lt;</span>openHiTLS动态库安装路径<span class="token operator">></span></span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+<div align=center><img src="@source/.vuepress/public/openHiTLS.png"></div>
+<p>openHiTLS旨在打造算法先进、性能卓越、高效敏捷、安全可靠的密码套件，通过轻量级、可剪裁的软件技术架构满足各行业不同场景的多样化要求，让密码技术应用更简单，同时探索后量子等先进算法创新实践，构建密码前沿技术底座！</p>
+</div></template>
 
 
