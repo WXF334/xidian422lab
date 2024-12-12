@@ -1,6 +1,6 @@
-<template><div><h1 id="在c-c-项目中集成openhitls" tabindex="-1"><a class="header-anchor" href="#在c-c-项目中集成openhitls"><span>在C/C++项目中集成openHiTLS</span></a></h1>
+<template><div><h1 id="三-在c-c-应用项目中调用openhitls" tabindex="-1"><a class="header-anchor" href="#三-在c-c-应用项目中调用openhitls"><span>三. 在C/C++应用项目中调用openHiTLS</span></a></h1>
 <p>在本章节中将以对称加密和TLS两个示例演示如何在您的项目代码中调用openHiTLS提供的接口。</p>
-<h2 id="对称加密实现示例" tabindex="-1"><a class="header-anchor" href="#对称加密实现示例"><span>对称加密实现示例</span></a></h2>
+<h2 id="_1-sm4加密实现示例" tabindex="-1"><a class="header-anchor" href="#_1-sm4加密实现示例"><span>1. SM4加密实现示例</span></a></h2>
 <p>创建SM4_CBC.c，代码如下：</p>
 <div class="language-c line-numbers-mode" data-highlighter="prismjs" data-ext="c" data-title="c"><pre v-pre><code><span class="line"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span></span>
 <span class="line"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h></span></span></span>
@@ -184,7 +184,7 @@
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>示例运行成功</p>
 <p><img src="@source/.vuepress/public/sm4cbc运行成功.png" alt=""></p>
-<h2 id="tls实现示例" tabindex="-1"><a class="header-anchor" href="#tls实现示例"><span>TLS实现示例</span></a></h2>
+<h2 id="_2-tls实现示例" tabindex="-1"><a class="header-anchor" href="#_2-tls实现示例"><span>2. TLS实现示例</span></a></h2>
 <p>由于TLS需要同时运行server和client两个程序，而openEuler没有图形化操作界面操作不便，现介绍用PowerShell实现打开多个终端界面。
 首先在openEuler系统中查看ip</p>
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line"><span class="token function">ifconfig</span></span>

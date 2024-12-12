@@ -1,6 +1,6 @@
-<template><div><h1 id="测试指南" tabindex="-1"><a class="header-anchor" href="#测试指南"><span>测试指南</span></a></h1>
+<template><div><h1 id="二-测试指南" tabindex="-1"><a class="header-anchor" href="#二-测试指南"><span>二. 测试指南</span></a></h1>
 <p>在构建完OpenHiTLS后，执行测试代码。测试工程依赖编译源码，参考《下载并构建OpenHiTLS》准备构建源码编译依赖的环境等，确保源码能够得到正确编译。</p>
-<h2 id="测试代码目录结构" tabindex="-1"><a class="header-anchor" href="#测试代码目录结构"><span>测试代码目录结构</span></a></h2>
+<h2 id="_1-测试代码目录结构" tabindex="-1"><a class="header-anchor" href="#_1-测试代码目录结构"><span>1. 测试代码目录结构</span></a></h2>
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line">./testcode/</span>
 <span class="line">├── CMakeLists.txt</span>
 <span class="line">├── common</span>
@@ -41,11 +41,11 @@
 <li>sdv：openHiTLS功能场景测试用例代码</li>
 <li>testdata：存放测试类数据等</li>
 </ul>
-<h2 id="功能测试执行指导" tabindex="-1"><a class="header-anchor" href="#功能测试执行指导"><span>功能测试执行指导</span></a></h2>
-<h3 id="_1-测试框架说明" tabindex="-1"><a class="header-anchor" href="#_1-测试框架说明"><span>1. 测试框架说明</span></a></h3>
+<h2 id="_2-功能测试执行指导" tabindex="-1"><a class="header-anchor" href="#_2-功能测试执行指导"><span>2. 功能测试执行指导</span></a></h2>
+<h3 id="a-测试框架说明" tabindex="-1"><a class="header-anchor" href="#a-测试框架说明"><span>a. 测试框架说明</span></a></h3>
 <p>使用社区开发的测试框架，提供公共的配置和方法以便社区开发者进行测试代码的编写和执行。一个测试单元由function文件（.c）和data（.data）文件组成，分别保存测试函数和测试数据。</p>
 <p><img src="@source/.vuepress/public/测试框架.jpg" alt=""></p>
-<h3 id="_2-脚本参数说明" tabindex="-1"><a class="header-anchor" href="#_2-脚本参数说明"><span>2. 脚本参数说明</span></a></h3>
+<h3 id="b-脚本参数说明" tabindex="-1"><a class="header-anchor" href="#b-脚本参数说明"><span>b. 脚本参数说明</span></a></h3>
 <table>
 <thead>
 <tr>
@@ -184,7 +184,7 @@
 <li>默认方式执行全量用例：bash execute_sdv.sh</li>
 <li>执行指定的测试集合：bash execute_sdv.sh test_suites_xxx1 test_suites_xxx2</li>
 </ul>
-<h3 id="_3-用例执行流程" tabindex="-1"><a class="header-anchor" href="#_3-用例执行流程"><span>3. 用例执行流程</span></a></h3>
+<h3 id="c-用例执行流程" tabindex="-1"><a class="header-anchor" href="#c-用例执行流程"><span>c. 用例执行流程</span></a></h3>
 <p>测试工程主要依赖以下脚本：</p>
 <ul>
 <li><strong>build_hitls.sh</strong>： 一键式构建源码脚本</li>

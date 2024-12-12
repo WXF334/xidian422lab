@@ -1,7 +1,6 @@
-<template><div><h1 id="下载并构建openhitls" tabindex="-1"><a class="header-anchor" href="#下载并构建openhitls"><span>下载并构建OpenHiTLS</span></a></h1>
-<h2 id="下载并安装openeuler系统" tabindex="-1"><a class="header-anchor" href="#下载并安装openeuler系统"><span>下载并安装openEuler系统</span></a></h2>
+<template><div><h1 id="一-下载并构建openhitls" tabindex="-1"><a class="header-anchor" href="#一-下载并构建openhitls"><span>一. 下载并构建OpenHiTLS</span></a></h1>
+<h2 id="_1-下载并安装openeuler系统" tabindex="-1"><a class="header-anchor" href="#_1-下载并安装openeuler系统"><span>1. 下载并安装openEuler系统</span></a></h2>
 <p><a href="https://www.openeuler.org/zh/download/?version=openEuler%2024.03%20LTS" target="_blank" rel="noopener noreferrer">官方下载地址</a></p>
-<h3 id="使用vmware安装openeuler" tabindex="-1"><a class="header-anchor" href="#使用vmware安装openeuler"><span>使用vmware安装openEuler</span></a></h3>
 <p>新建虚拟机时注意以下步骤：</p>
 <ul>
 <li>选择镜像文件</li>
@@ -11,8 +10,8 @@
 <li>选择linux内核版本</li>
 </ul>
 <p><img src="@source/.vuepress/public/新建虚拟机2.png" alt=""></p>
-<h2 id="构建及安装指导" tabindex="-1"><a class="header-anchor" href="#构建及安装指导"><span>构建及安装指导</span></a></h2>
-<h3 id="_1-准备构建环境" tabindex="-1"><a class="header-anchor" href="#_1-准备构建环境"><span>1. 准备构建环境</span></a></h3>
+<h2 id="_2-构建及安装指导" tabindex="-1"><a class="header-anchor" href="#_2-构建及安装指导"><span>2. 构建及安装指导</span></a></h2>
+<h3 id="a-准备构建环境" tabindex="-1"><a class="header-anchor" href="#a-准备构建环境"><span>a. 准备构建环境</span></a></h3>
 <p>检查系统中构建工具是否已安装，并能正常使用。</p>
 <table>
 <thead>
@@ -45,8 +44,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="查看命令" tabindex="-1"><a class="header-anchor" href="#查看命令"><span>查看命令</span></a></h4>
-<p>当前openEuler24.03版本系统自带Gcc和Python，CMake和Sctp需要自行安装，命令如下：</p>
+<p>当前openEuler24.03版本系统自带Gcc和Python，CMake和Sctp需要自行安装，查看版本和安装命令如下：</p>
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line">gcc <span class="token parameter variable">-v</span></span>
 <span class="line"></span>
 <span class="line">python3 <span class="token parameter variable">-v</span></span>
@@ -56,11 +54,11 @@
 <span class="line"></span>
 <span class="line"><span class="token function">sudo</span> dnf <span class="token function">install</span> lksctp*</span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-准备源码" tabindex="-1"><a class="header-anchor" href="#_2-准备源码"><span>2. 准备源码</span></a></h3>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="b-准备源码" tabindex="-1"><a class="header-anchor" href="#b-准备源码"><span>b. 准备源码</span></a></h3>
 <p>使用git submodule的方式下载，可以直接下载源码和依赖的Securec库，下载命令如下：</p>
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line"><span class="token function">git</span> clone --recurse-submodules https://gitcode.com/openhitls/openhitls.git</span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="_3-openhitls构建及安装" tabindex="-1"><a class="header-anchor" href="#_3-openhitls构建及安装"><span>3. openHiTLS构建及安装</span></a></h3>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="c-openhitls构建及安装" tabindex="-1"><a class="header-anchor" href="#c-openhitls构建及安装"><span>c. openHiTLS构建及安装</span></a></h3>
 <p>进入openHiTLS后代码目录结构如下：</p>
 <div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre><code><span class="line">使用tree <span class="token parameter variable">-L</span> <span class="token number">1</span>查看目录结构，如下：</span>
 <span class="line"></span>
